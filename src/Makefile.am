@@ -315,6 +315,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_shavite.h \
   crypto/sph_simd.h \
   crypto/sph_skein.h \
+  crypto/sph_hamsi.h \
   crypto/sph_types.h \
   crypto/sha512.cpp \
   crypto/sha512.h

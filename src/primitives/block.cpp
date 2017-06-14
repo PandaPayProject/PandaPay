@@ -7,6 +7,7 @@
 
 #include "tinyformat.h"
 #include "utilstrencodings.h"
+#include "hash.h"
 #include "crypto/common.h"
 #include "crypto/xevan.h"
 
