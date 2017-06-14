@@ -106,7 +106,6 @@ BITCOIN_CORE_H = \
   governance-vote.h \
   governance-votedb.h \
   flat-database.h \
-  xevan.h \
   hash.h \
   httprpc.h \
   httpserver.h \
@@ -280,6 +279,7 @@ libbitcoin_wallet_a_SOURCES = \
 crypto_libbitcoin_crypto_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_CONFIG_INCLUDES) $(PIC_FLAGS)
 crypto_libbitcoin_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(PIC_FLAGS)
 crypto_libbitcoin_crypto_a_SOURCES = \
+  crypto/xevan.h \
   crypto/common.h \
   crypto/hmac_sha256.cpp \
   crypto/hmac_sha256.h \
