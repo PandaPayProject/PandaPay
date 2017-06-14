@@ -1,0 +1,6 @@
+usr/local/bin/pandapay-qt usr/bin
+share/pixmaps/pandapay32.xpm usr/share/pixmaps
+share/pixmaps/pandapay16.xpm usr/share/pixmaps
+share/pixmaps/pandapay128.png usr/share/pixmaps
+debian/pandapay-qt.desktop usr/share/applications
+debian/pandapay-qt.protocol usr/share/kde4/services/

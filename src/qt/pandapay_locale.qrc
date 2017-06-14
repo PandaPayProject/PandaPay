@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/pandapay_bg.qm</file>
+        <file alias="de">locale/pandapay_de.qm</file>
+        <file alias="en">locale/pandapay_en.qm</file>
+        <file alias="es">locale/pandapay_es.qm</file>
+        <file alias="fi">locale/pandapay_fi.qm</file>
+        <file alias="fr">locale/pandapay_fr.qm</file>
+        <file alias="it">locale/pandapay_it.qm</file>
+        <file alias="ja">locale/pandapay_ja.qm</file>
+        <file alias="pl">locale/pandapay_pl.qm</file>
+        <file alias="pt">locale/pandapay_pt.qm</file>
+        <file alias="ru">locale/pandapay_ru.qm</file>
+        <file alias="sk">locale/pandapay_sk.qm</file>
+        <file alias="sv">locale/pandapay_sv.qm</file>
+        <file alias="vi">locale/pandapay_vi.qm</file>
+        <file alias="zh_CN">locale/pandapay_zh_CN.qm</file>
+        <file alias="zh_TW">locale/pandapay_zh_TW.qm</file>
+    </qresource>
+</RCC>

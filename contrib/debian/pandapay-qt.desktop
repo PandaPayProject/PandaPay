@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=PandaPay
+Comment=PandaPay P2P Cryptocurrency
+Comment[fr]=PandaPay, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=PandaPay, eşten eşe kriptografik sanal para birimi
+Exec=pandapay-qt %u
+Terminal=false
+Type=Application
+Icon=pandapay128
+MimeType=x-scheme-handler/pandapay;
+Categories=Office;Finance;

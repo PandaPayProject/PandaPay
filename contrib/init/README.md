@@ -1,11 +1,11 @@
 Sample configuration files for:
 
-SystemD: dashd.service
-Upstart: dashd.conf
-OpenRC:  dashd.openrc
-         dashd.openrcconf
-CentOS:  dashd.init
-OS X:    org.dash.dashd.plist
+SystemD: pandapayd.service
+Upstart: pandapayd.conf
+OpenRC:  pandapayd.openrc
+         pandapayd.openrcconf
+CentOS:  pandapayd.init
+OS X:    org.pandapay.pandapayd.plist
 
 have been made available to assist packagers in creating node packages here.
 

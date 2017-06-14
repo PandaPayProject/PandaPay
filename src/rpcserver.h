@@ -123,7 +123,7 @@ public:
 };
 
 /**
- * Dash RPC command dispatcher.
+ * PandaPay RPC command dispatcher.
  */
 class CRPCTable
 {
