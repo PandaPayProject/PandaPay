@@ -6,13 +6,14 @@
 #include "primitives/block.h"
 
 #include "hash.h"
+#include "xevan.h"
 #include "tinyformat.h"
 #include "utilstrencodings.h"
 #include "crypto/common.h"
 
 uint256 CBlockHeader::GetHash() const
 {
-    return HashX11(BEGIN(nVersion), END(nNonce));
+    return XEVAN(BEGIN(nVersion), END(nNonce));
 }
 
 std::string CBlock::ToString() const

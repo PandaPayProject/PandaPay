@@ -106,6 +106,7 @@ BITCOIN_CORE_H = \
   governance-vote.h \
   governance-votedb.h \
   flat-database.h \
+  xevan.h \
   hash.h \
   httprpc.h \
   httpserver.h \
