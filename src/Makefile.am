@@ -329,8 +329,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_haval.h \
   crypto/sph_types.h \
   crypto/sha512.cpp \
-  crypto/sha512.h \
-  crypto/xevan.h
+  crypto/sha512.h
 
 # common: shared between pandapayd, and pandapay-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
