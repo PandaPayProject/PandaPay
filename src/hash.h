@@ -302,11 +302,6 @@ unsigned int MurmurHash3(unsigned int nHashSeed, const std::vector<unsigned char
 
 void BIP32Hash(const ChainCode &chainCode, unsigned int nChild, unsigned char header, const unsigned char data[32], unsigned char output[64]);
 
-/* ----------- Dash Hash ------------------------------------------------ */
-template<typename T1>
-inline uint256 HashX11(const T1 pbegin, const T1 pend)
-
-{
     sph_blake512_context     ctx_blake;
     sph_bmw512_context       ctx_bmw;
     sph_groestl512_context   ctx_groestl;
@@ -367,7 +362,6 @@ inline uint256 HashX11(const T1 pbegin, const T1 pend)
     sph_echo512_close(&ctx_echo, static_cast<void*>(&hash[10]));
 
     return hash[10].trim256();
-}
 
 template<typename T1>
 inline uint256 XEVAN(const T1 pbegin, const T1 pend)
