@@ -1,10 +1,9 @@
 #ifndef XEVAN_H
 #define XEVAN_H
 
-#include "serialize.h" 
-#include "uint256.h"  //Stock
-#include "version.h"
-//#include "chainparams.h" // for LogPrintf BitSendDev
+#include "../serialize.h" 
+#include "../uint256.h"
+#include "../version.h"
 
 
 #include "sph_blake.h"
@@ -14,16 +13,16 @@
 #include "sph_keccak.h"
 #include "sph_skein.h"
 #include "sph_luffa.h"
-#include "sph_cubehash.h"//X17 
+#include "sph_cubehash.h" 
 #include "sph_shavite.h"
 #include "sph_simd.h"
 #include "sph_echo.h" 
-#include "sph_hamsi.h" //X17 
-#include "sph_fugue.h"//X17 
-#include "sph_shabal.h" //X17 
-#include "sph_whirlpool.h" //X17 
-#include "sph_sha2.h" //X17 
-#include "sph_haval.h" //X17 
+#include "sph_hamsi.h" 
+#include "sph_fugue.h" 
+#include "sph_shabal.h" 
+#include "sph_whirlpool.h" 
+#include "sph_sha2.h" 
+#include "sph_haval.h" 
 
 #ifndef QT_NO_DEBUG
 #include <string>

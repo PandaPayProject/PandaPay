@@ -279,7 +279,6 @@ libbitcoin_wallet_a_SOURCES = \
 crypto_libbitcoin_crypto_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_CONFIG_INCLUDES) $(PIC_FLAGS)
 crypto_libbitcoin_crypto_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(PIC_FLAGS)
 crypto_libbitcoin_crypto_a_SOURCES = \
-  crypto/xevan.h \
   crypto/common.h \
   crypto/hmac_sha256.cpp \
   crypto/hmac_sha256.h \
@@ -292,12 +291,18 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/cubehash.c \
   crypto/echo.c \
   crypto/groestl.c \
+  crypto/fugue.c \
+  crypto/hamsi.c \
   crypto/jh.c \
   crypto/keccak.c \
   crypto/luffa.c \
   crypto/shavite.c \
   crypto/simd.c \
   crypto/skein.c \
+  crypto/shabal.c \
+  crypto/whirlpool.c \
+  crypto/haval.c \
+  crypto/sha2.c \
   crypto/ripemd160.h \
   crypto/sha1.cpp \
   crypto/sha1.h \
@@ -316,9 +321,15 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/sph_simd.h \
   crypto/sph_skein.h \
   crypto/sph_hamsi.h \
+  crypto/sph_fugue.h \
+  crypto/sph_shabal.h \
+  crypto/sph_whirlpool.h \
+  crypto/sph_sha2.h \
+  crypto/sph_haval.h \
   crypto/sph_types.h \
   crypto/sha512.cpp \
-  crypto/sha512.h
+  crypto/sha512.h \
+  crypto/xevan.h
 
 # common: shared between pandapayd, and pandapay-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
