@@ -303,6 +303,7 @@ crypto_libbitcoin_crypto_a_SOURCES = \
   crypto/whirlpool.c \
   crypto/haval.c \
   crypto/sha2.c \
+  crypto/sph_sha2big.c \
   crypto/ripemd160.h \
   crypto/sha1.cpp \
   crypto/sha1.h \
