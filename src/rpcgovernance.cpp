@@ -890,30 +890,3 @@ UniValue getgovernanceinfo(const UniValue& params, bool fHelp)
 
     return obj;
 }
-
-UniValue getsuperblockbudget(const UniValue& params, bool fHelp)
-{
-    if (fHelp || params.size() != 1) {
-        throw std::runtime_error(
-            "getsuperblockbudget index\n"
-            "\nReturns the absolute maximum sum of superblock payments allowed.\n"
-            "\nArguments:\n"
-            "1. index         (numeric, required) The block index\n"
-            "\nResult:\n"
-            "n                (numeric) The absolute maximum sum of superblock payments allowed, in " + CURRENCY_UNIT + "\n"
-            "\nExamples:\n"
-            + HelpExampleCli("getsuperblockbudget", "1000")
-            + HelpExampleRpc("getsuperblockbudget", "1000")
-        );
-    }
-
-    int nBlockHeight = params[0].get_int();
-    if (nBlockHeight < 0) {
-        throw JSONRPCError(RPC_INVALID_PARAMETER, "Block height out of range");
-    }
-
-    CAmount nBudget = CSuperblock::GetPaymentsLimit(nBlockHeight);
-    std::string strBudget = FormatMoney(nBudget);
-
-    return strBudget;
-}

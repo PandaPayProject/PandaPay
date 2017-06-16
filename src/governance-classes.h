@@ -159,9 +159,6 @@ public:
     CSuperblock();
     CSuperblock(uint256& nHash);
 
-    static bool IsValidBlockHeight(int nBlockHeight);
-    static CAmount GetPaymentsLimit(int nBlockHeight);
-
     int GetStatus() { return nStatus; }
     void SetStatus(int nStatusIn) { nStatus = nStatusIn; }
 

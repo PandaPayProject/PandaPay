@@ -281,9 +281,6 @@ std::vector<CSuperblock_sptr> CGovernanceTriggerManager::GetActiveTriggers()
 bool CSuperblockManager::IsSuperblockTriggered(int nBlockHeight)
 {
     LogPrint("gobject", "CSuperblockManager::IsSuperblockTriggered -- Start nBlockHeight = %d\n", nBlockHeight);
-    if (!CSuperblock::IsValidBlockHeight(nBlockHeight)) {
-        return false;
-    }
 
     LOCK(governance.cs);
     // GET ALL ACTIVE TRIGGERS
@@ -345,10 +342,6 @@ bool CSuperblockManager::IsSuperblockTriggered(int nBlockHeight)
 
 bool CSuperblockManager::GetBestSuperblock(CSuperblock_sptr& pSuperblockRet, int nBlockHeight)
 {
-    if(!CSuperblock::IsValidBlockHeight(nBlockHeight)) {
-        return false;
-    }
-
     AssertLockHeld(governance.cs);
     std::vector<CSuperblock_sptr> vecTriggers = triggerman.GetActiveTriggers();
     int nYesCount = 0;
@@ -511,37 +504,6 @@ CSuperblock(uint256& nHash)
     DBG( cout << "CSuperblock Constructor End" << endl; );
 }
 
-/**
- *   Is Valid Superblock Height
- *
- *   - See if a block at this height can be a superblock
- */
-
-bool CSuperblock::IsValidBlockHeight(int nBlockHeight)
-{
-    // SUPERBLOCKS CAN HAPPEN ONLY after hardfork and only ONCE PER CYCLE
-    return nBlockHeight >= Params().GetConsensus().nSuperblockStartBlock &&
-            ((nBlockHeight % Params().GetConsensus().nSuperblockCycle) == 0);
-}
-
-CAmount CSuperblock::GetPaymentsLimit(int nBlockHeight)
-{
-    const Consensus::Params& consensusParams = Params().GetConsensus();
-
-    if(!IsValidBlockHeight(nBlockHeight)) {
-        return 0;
-    }
-
-    // min subsidy for high diff networks and vice versa
-    int nBits = consensusParams.fPowAllowMinDifficultyBlocks ? UintToArith256(consensusParams.powLimit).GetCompact() : 1;
-    // some part of all blocks issued during the cycle goes to superblock, see GetBlockSubsidy
-    CAmount nSuperblockPartOfSubsidy = GetBlockSubsidy(nBits, nBlockHeight, consensusParams, true);
-    CAmount nPaymentsLimit = nSuperblockPartOfSubsidy * consensusParams.nSuperblockCycle;
-    LogPrint("gobject", "CSuperblock::GetPaymentsLimit -- Valid superblock height %d, payments max %lld\n", nBlockHeight, nPaymentsLimit);
-
-    return nPaymentsLimit;
-}
-
 void CSuperblock::ParsePaymentSchedule(std::string& strPaymentAddresses, std::string& strPaymentAmounts)
 {
     // SPLIT UP ADDR/AMOUNT STRINGS AND PUT IN VECTORS
@@ -645,10 +607,6 @@ bool CSuperblock::IsValid(const CTransaction& txNew, int nBlockHeight, CAmount b
     // internal to *this and since CSuperblock's are accessed only through
     // shared pointers there's no way our object can get deleted while this
     // code is running.
-    if(!IsValidBlockHeight(nBlockHeight)) {
-        LogPrintf("CSuperblock::IsValid -- ERROR: Block invalid, incorrect block height\n");
-        return false;
-    }
 
     std::string strPayeesPossible = "";
 
@@ -674,11 +632,6 @@ bool CSuperblock::IsValid(const CTransaction& txNew, int nBlockHeight, CAmount b
 
     // payments should not exceed limit
     CAmount nPaymentsTotalAmount = GetPaymentsTotalAmount();
-    CAmount nPaymentsLimit = GetPaymentsLimit(nBlockHeight);
-    if(nPaymentsTotalAmount > nPaymentsLimit) {
-        LogPrintf("CSuperblock::IsValid -- ERROR: Block invalid, payments limit exceeded: payments %lld, limit %lld\n", nPaymentsTotalAmount, nPaymentsLimit);
-        return false;
-    }
 
     // miner should not get more than he would usually get
     CAmount nBlockValue = txNew.GetValueOut();
