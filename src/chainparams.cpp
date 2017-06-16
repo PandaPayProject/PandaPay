@@ -120,12 +120,12 @@ public:
 		
                            printf("Searching for genesis block...\n");
                            arith_uint256 hashTarget = arith_uint256().SetCompact(genesis.nBits);
-                           arith_uint256 thash;
+                           uint256 thash;
 
                            while (true)
                            {
                                thash = genesis.GetHash();
-                               if (thash <= hashTarget)
+                               if (UintToArith256(thash) <= hashTarget)
                                    break;
                                if ((genesis.nNonce & 0xFFF) == 0)
                                {
