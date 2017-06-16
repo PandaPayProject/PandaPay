@@ -10,7 +10,7 @@
 #include "tinyformat.h"
 #include "util.h"
 #include "utilstrencodings.h"
-
+#include "uint256.h"
 #include <assert.h>
 
 #include <boost/assign/list_of.hpp>
@@ -119,8 +119,8 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
 		
                            printf("Searching for genesis block...\n");
-                           uint256S hashTarget = CScriptNum().SetCompact(genesis.nBits).getuint256();
-                           uint256S thash;
+                           uint256 hashTarget = CScriptNum().SetCompact(genesis.nBits).getuint256();
+                           uint256 thash;
 
                            while (true)
                            {
