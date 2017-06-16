@@ -119,7 +119,7 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
 		
                            printf("Searching for genesis block...\n");
-                           uint256 hashTarget = CBigNum().SetCompact(genesis.nBits).getuint256();
+                           uint256 hashTarget = CScriptNum().SetCompact(genesis.nBits).getuint256();
                            uint256 thash;
 
                            while (true)
