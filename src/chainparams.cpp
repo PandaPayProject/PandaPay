@@ -119,8 +119,8 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
 		
                            printf("Searching for genesis block...\n");
-                           uint256 hashTarget = arith_uint256().SetCompact(genesis.nBits).getuint256();
-                           uint256 thash;
+                           arith_uint256 hashTarget = arith_uint256().SetCompact(genesis.nBits);
+                           arith_uint256 thash;
 
                            while (true)
                            {
