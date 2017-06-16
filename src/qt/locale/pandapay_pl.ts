@@ -864,28 +864,28 @@ Adres: %4
         <translation>Proszę wybrać poziom bezpieczeństwa.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 PANDA</source>
-        <translation>Użyj 2 oddzielnych masternodów aby wymieszać środki max. do 1000 PANDA</translation>
+        <source>Use 2 separate masternodes to mix funds up to 262500 PANDA</source>
+        <translation>Użyj 2 oddzielnych masternodów aby wymieszać środki max. do 262500 PANDA</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 PANDA</source>
-        <translation>Użyj 8 oddzielnych masternodów aby wymieszać środki max. do 1000 PANDA</translation>
+        <source>Use 8 separate masternodes to mix funds up to 262500 PANDA</source>
+        <translation>Użyj 8 oddzielnych masternodów aby wymieszać środki max. do 262500 PANDA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Użyj 16 oddzielnych masternodów</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PANDA to anonymize 1000 PANDA</source>
-        <translation>Ta opcja jest najszybsza i kosztuje około 0.025 PANDA za zanonimizowanie 1000 PANDA</translation>
+        <source>This option is the quickest and will cost about ~0.025 PANDA to anonymize 262500 PANDA</source>
+        <translation>Ta opcja jest najszybsza i kosztuje około 0.025 PANDA za zanonimizowanie 262500 PANDA</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PANDA to anonymize 1000 PANDA</source>
-        <translation>Ta opcja jest w miarę szybka i kosztuje około 0.05 PANDA za zanonimizowanie 1000 PANDA</translation>
+        <source>This option is moderately fast and will cost about 0.05 PANDA to anonymize 262500 PANDA</source>
+        <translation>Ta opcja jest w miarę szybka i kosztuje około 0.05 PANDA za zanonimizowanie 262500 PANDA</translation>
     </message>
     <message>
-        <source>0.1 PANDA per 1000 PANDA you anonymize.</source>
-        <translation>0.1 PANDA za każde 1000 PANDA które zanonimizujesz.</translation>
+        <source>0.1 PANDA per 262500 PANDA you anonymize.</source>
+        <translation>0.1 PANDA za każde 262500 PANDA które zanonimizujesz.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -3390,8 +3390,8 @@ https://www.transifex.com/projects/p/pandapay/</translation>
         <translation>Nie znaleziono wystarczających denominowanych środków Darksend do wykonania tej transakcji.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 PANDA.</source>
-        <translation>Nie znaleziono wystarczającej ilości nie zdenominowanych środków Darksend dla tej transakcji, które nie równają się 1000 PANDA</translation>
+        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 262500 PANDA.</source>
+        <translation>Nie znaleziono wystarczającej ilości nie zdenominowanych środków Darksend dla tej transakcji, które nie równają się 262500 PANDA</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
@@ -3733,8 +3733,8 @@ Zaleca się również aby ustawić alarm powiadomień tzw. alertnotify, aby dać
 </translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 PANDA.</source>
-        <translation>Niemożliwe jest zlokalizowanie wystarczającej ilości środków dla tej transakcji, które nie są równe 1000 PANDA.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 262500 PANDA.</source>
+        <translation>Niemożliwe jest zlokalizowanie wystarczającej ilości środków dla tej transakcji, które nie są równe 262500 PANDA.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>

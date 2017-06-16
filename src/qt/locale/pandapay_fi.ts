@@ -925,11 +925,11 @@
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 PANDA</source>
+        <source>Use 2 separate masternodes to mix funds up to 262500 PANDA</source>
         <translation>Käytä 2 erillistä masternodea sekoittaaksesi varoja</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 PANDA</source>
+        <source>Use 8 separate masternodes to mix funds up to 262500 PANDA</source>
         <translation>Käytä 8 erillistä masternodea sekoittaaksesi varoja</translation>
     </message>
     <message>
@@ -937,16 +937,16 @@
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PANDA to anonymize 1000 PANDA</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 PANDA kun anonymisoidaan 1000 PANDA</translation>
+        <source>This option is the quickest and will cost about ~0.025 PANDA to anonymize 262500 PANDA</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 PANDA kun anonymisoidaan 262500 PANDA</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PANDA to anonymize 1000 PANDA</source>
-        <translation>Tämä vaihtoehto on keskinopea ja maksaa noin ~0.05 PANDA kun anonymisoidaan 1000 PANDA</translation>
+        <source>This option is moderately fast and will cost about 0.05 PANDA to anonymize 262500 PANDA</source>
+        <translation>Tämä vaihtoehto on keskinopea ja maksaa noin ~0.05 PANDA kun anonymisoidaan 262500 PANDA</translation>
     </message>
     <message>
-        <source>0.1 PANDA per 1000 PANDA you anonymize.</source>
-        <translation>0.1 PANDA maksu per 1000 PANDA jonka anonymisoit.</translation>
+        <source>0.1 PANDA per 262500 PANDA you anonymize.</source>
+        <translation>0.1 PANDA maksu per 262500 PANDA jonka anonymisoit.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -3971,8 +3971,8 @@ Näillä toiminnoilla voit korjata korruptoituneen lohkoketjun tai puuttuvat/van
 Käännös päivitetty: 11.3.2017 by AjM.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 PANDA.</source>
-        <translation>Ei tarpeeksi varoja tälle siirtotapahtumalle, joka ei ole 1000 PANDA.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 262500 PANDA.</source>
+        <translation>Ei tarpeeksi varoja tälle siirtotapahtumalle, joka ei ole 262500 PANDA.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4496,8 +4496,8 @@ Vähennä uakommenttien määrää tai kokoa.</translation>
         <translation>Ei tarpeeksi PrivateSend sekoitettuja varoja tälle siirtotapahtumalle.</translation>
     </message>
     <message>
-        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 PANDA.</source>
-        <translation>Ei tarpeeksi PrivateSend ei-denominoituja varoja tälle siirtotapahtumalle, joka ei ole 1000 PANDA.</translation>
+        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 262500 PANDA.</source>
+        <translation>Ei tarpeeksi PrivateSend ei-denominoituja varoja tälle siirtotapahtumalle, joka ei ole 262500 PANDA.</translation>
     </message>
     <message>
         <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>

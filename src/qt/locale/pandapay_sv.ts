@@ -758,28 +758,28 @@ Adress: %4
         <translation>Vänligen välj en integritetsnivå.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 PANDA</source>
-        <translation>Använd 2 enskilda masternoder för att mixa medel upp till 1000 PANDA</translation>
+        <source>Use 2 separate masternodes to mix funds up to 262500 PANDA</source>
+        <translation>Använd 2 enskilda masternoder för att mixa medel upp till 262500 PANDA</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 PANDA</source>
-        <translation>Använd 8 enskilda masternoder för att mixa medel upp till 1000 PANDA.</translation>
+        <source>Use 8 separate masternodes to mix funds up to 262500 PANDA</source>
+        <translation>Använd 8 enskilda masternoder för att mixa medel upp till 262500 PANDA.</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Använd 16 enskilda masternoder</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PANDA to anonymize 1000 PANDA</source>
-        <translation>Detta alternativ är det snabbaste och kommer att kosta omkring ~0,025 PANDA för att anonymisera 1000 PANDA</translation>
+        <source>This option is the quickest and will cost about ~0.025 PANDA to anonymize 262500 PANDA</source>
+        <translation>Detta alternativ är det snabbaste och kommer att kosta omkring ~0,025 PANDA för att anonymisera 262500 PANDA</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PANDA to anonymize 1000 PANDA</source>
-        <translation>Detta alternativ är relativt snabbt och kommer att kosta omkring 0,05 PANDA för att anonymisera 1000 PANDA</translation>
+        <source>This option is moderately fast and will cost about 0.05 PANDA to anonymize 262500 PANDA</source>
+        <translation>Detta alternativ är relativt snabbt och kommer att kosta omkring 0,05 PANDA för att anonymisera 262500 PANDA</translation>
     </message>
     <message>
-        <source>0.1 PANDA per 1000 PANDA you anonymize.</source>
-        <translation>0,1 PANDA per 1000 PANDA du anonymiserar.</translation>
+        <source>0.1 PANDA per 262500 PANDA you anonymize.</source>
+        <translation>0,1 PANDA per 262500 PANDA du anonymiserar.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -2726,8 +2726,8 @@ https://www.transifex.com/projects/p/pandapay/</translation>
         <translation>Kunde inte hitta tillräckliga Darksend-denominationsmedel för denna transaktion.</translation>
     </message>
     <message>
-        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 1000 PANDA.</source>
-        <translation>Kunde inte hitta tillräckliga Darksend-icke-denominationsmedel för denna transaktion som inte är likvärdiga 1000 PANDA.</translation>
+        <source>Unable to locate enough Darksend non-denominated funds for this transaction that are not equal 262500 PANDA.</source>
+        <translation>Kunde inte hitta tillräckliga Darksend-icke-denominationsmedel för denna transaktion som inte är likvärdiga 262500 PANDA.</translation>
     </message>
     <message>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>

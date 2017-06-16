@@ -217,7 +217,7 @@ QT_TRANSLATE_NOOP("pandapay-core", ""
 "Unable to locate enough PrivateSend denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("pandapay-core", ""
 "Unable to locate enough PrivateSend non-denominated funds for this "
-"transaction that are not equal 1000 PANDA."),
+"transaction that are not equal 262500 PANDA."),
 QT_TRANSLATE_NOOP("pandapay-core", ""
 "Unable to locate enough funds for this transaction that are not equal 1000 "
 "PANDA."),

@@ -925,28 +925,28 @@
         <translation>Veuillez choisir un niveau de confidentialité.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 1000 PANDA</source>
-        <translation>Utiliser 2 masternodes pour mélanger jusqu'à 1000 PANDA</translation>
+        <source>Use 2 separate masternodes to mix funds up to 262500 PANDA</source>
+        <translation>Utiliser 2 masternodes pour mélanger jusqu'à 262500 PANDA</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 1000 PANDA</source>
-        <translation>Utiliser 8 masternodes pour mélanger jusqu'à 1000 PANDA</translation>
+        <source>Use 8 separate masternodes to mix funds up to 262500 PANDA</source>
+        <translation>Utiliser 8 masternodes pour mélanger jusqu'à 262500 PANDA</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utiliser 16 masternodes</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 PANDA to anonymize 1000 PANDA</source>
-        <translation>Cette option est la plus rapide et coûtera environ 0,025 PANDA pour anonymiser 1000 PANDA</translation>
+        <source>This option is the quickest and will cost about ~0.025 PANDA to anonymize 262500 PANDA</source>
+        <translation>Cette option est la plus rapide et coûtera environ 0,025 PANDA pour anonymiser 262500 PANDA</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 PANDA to anonymize 1000 PANDA</source>
-        <translation>Cette option est un peu moins rapide et coûtera environ 0,05 PANDA pour anonymiser 1000 PANDA</translation>
+        <source>This option is moderately fast and will cost about 0.05 PANDA to anonymize 262500 PANDA</source>
+        <translation>Cette option est un peu moins rapide et coûtera environ 0,05 PANDA pour anonymiser 262500 PANDA</translation>
     </message>
     <message>
-        <source>0.1 PANDA per 1000 PANDA you anonymize.</source>
-        <translation>0,1 PANDA par 1000 PANDA anonymisés.</translation>
+        <source>0.1 PANDA per 262500 PANDA you anonymize.</source>
+        <translation>0,1 PANDA par 262500 PANDA anonymisés.</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -3962,8 +3962,8 @@ https://www.transifex.com/projects/p/pandapay/</translation>
         <translation>Ce produit comprend des logiciels développés par le projet OpenSSL afin d'être utilisés dans la boîte à outils OpenSSL &lt;https://www.openssl.org/&gt;, un logiciel de chiffrement écrit par Eric Young et un logiciel UPnP développé par Thomas Bernard.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 1000 PANDA.</source>
-        <translation>Impossible de localiser suffisamment de fonds pour cette transaction qui ne sont pas égaux à 1000 PANDA.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 262500 PANDA.</source>
+        <translation>Impossible de localiser suffisamment de fonds pour cette transaction qui ne sont pas égaux à 262500 PANDA.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -4486,8 +4486,8 @@ https://www.transifex.com/projects/p/pandapay/</translation>
         <translation>Impossible de localiser suffisamment de fonds PrivateSend labellisés pour cette transaction.</translation>
     </message>
     <message>
-        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 1000 PANDA.</source>
-        <translation>Impossible de localiser suffisamment de fonds non-labellisés PrivateSend pour cette transaction qui ne sont pas égaux à 1000 PANDA.</translation>
+        <source>Unable to locate enough PrivateSend non-denominated funds for this transaction that are not equal 262500 PANDA.</source>
+        <translation>Impossible de localiser suffisamment de fonds non-labellisés PrivateSend pour cette transaction qui ne sont pas égaux à 262500 PANDA.</translation>
     </message>
     <message>
         <source>Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
