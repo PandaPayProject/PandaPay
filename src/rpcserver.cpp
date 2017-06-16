@@ -347,7 +347,6 @@ static const CRPCCommand vRPCCommands[] =
     { "pandapay",               "masternodelist",         &masternodelist,         true  },
     { "pandapay",               "masternodebroadcast",    &masternodebroadcast,    true  },
     { "pandapay",               "gobject",                &gobject,                true  },
-    { "pandapay",               "getgovernanceinfo",      &getgovernanceinfo,      true  },
     { "pandapay",               "voteraw",                &voteraw,                true  },
     { "pandapay",               "mnsync",                 &mnsync,                 true  },
     { "pandapay",               "spork",                  &spork,                  true  },
