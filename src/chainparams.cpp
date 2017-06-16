@@ -11,8 +11,9 @@
 #include "util.h"
 #include "utilstrencodings.h"
 #include "uint256.h"
+#include "arith_uint256.h"
 #include <assert.h>
-
+ 
 #include <boost/assign/list_of.hpp>
 #include <stdio.h>
 #include "chainparamsseeds.h"
