@@ -46,7 +46,9 @@ public:
     friend inline bool operator==(const base_blob& a, const base_blob& b) { return memcmp(a.data, b.data, sizeof(a.data)) == 0; }
     friend inline bool operator!=(const base_blob& a, const base_blob& b) { return memcmp(a.data, b.data, sizeof(a.data)) != 0; }
     friend inline bool operator<(const base_blob& a, const base_blob& b) { return memcmp(a.data, b.data, sizeof(a.data)) < 0; }
+	friend inline bool operator<=(const base_blob& a, const base_blob& b) { return memcmp(a.data, b.data, sizeof(a.data)) < 0 || memcmp(a.data, b.data, sizeof(a.data)) == 0; }
 
+	
     std::string GetHex() const;
     void SetHex(const char* psz);
     void SetHex(const std::string& str);
