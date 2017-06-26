@@ -102,42 +102,23 @@ public:
         nMaxTipAge = 6 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1497613315, 0, 0x1e0ffff0, 1, 10000 * COIN);
-		
+		//genesis.nTime = 1497613315
+		//genesis.nNonce = 1158802
+		//genesis.nVersion = 1
+		//genesis.GetHash = 000004dc4b125be785a22337c860d3db19f37db826b0d088346b999906714d49
+		//genesis.hashMerkleRoot = 8eb0cda23902ffc7caaf34d0d4cbceee254f450301657db069e98fa2fa6fe8e9
 
-						   
+		
+        genesis = CreateGenesisBlock(1497613315, 1158802, 0x1e0ffff0, 1, 10000 * COIN);
+								   
         consensus.hashGenesisBlock = genesis.GetHash();
-		
-                           printf("Searching for genesis block...\n");
-                           arith_uint256 hashTarget = arith_uint256().SetCompact(genesis.nBits);
-                           uint256 thash;
-
-                           while (true)
-                           {
-                               thash = genesis.GetHash();
-                               if (UintToArith256(thash) <= hashTarget)
-                                   break;
-                               if ((genesis.nNonce & 0xFFF) == 0)
-                               {
-                                   printf("nonce %08X: hash = %s (target = %s)\n", genesis.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
-                               }
-                               ++genesis.nNonce;
-                               if (genesis.nNonce == 0)
-                               {
-                                   printf("NONCE WRAPPED, incrementing time\n");
-                                   ++genesis.nTime;
-                               }
-                           }
-                           printf("genesis.nTime = %u \n", genesis.nTime);
-                           printf("genesis.nNonce = %u \n", genesis.nNonce);
-                           printf("genesis.nVersion = %u \n", genesis.nVersion);
-                           printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-                           printf("genesis.hashMerkleRoot = %s \n", genesis.hashMerkleRoot.ToString().c_str());		
-        assert(consensus.hashGenesisBlock == uint256S("0x"));
-        assert(genesis.hashMerkleRoot == uint256S("0x"));
+			
+        assert(consensus.hashGenesisBlock == uint256S("0x000004dc4b125be785a22337c860d3db19f37db826b0d088346b999906714d49"));
+        assert(genesis.hashMerkleRoot == uint256S("0x8eb0cda23902ffc7caaf34d0d4cbceee254f450301657db069e98fa2fa6fe8e9"));
 
 
-        vSeeds.push_back(CDNSSeedData("xxx", "xxx"));
+        vSeeds.push_back(CDNSSeedData("pandapay1.dyndns.org", "pandapay1.dyndns.org"));
+		vSeeds.push_back(CDNSSeedData("pandapay2.dyndns.org", "pandapay2.dyndns.org"));
 
 
         // PandaPay addresses start with 'P'
@@ -168,9 +149,10 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            (  1500, uint256S("0x000000aaf0300f59f49bc3e970bad15c11f961fe2347accffff19d96ec9778e3")),
-            1471809614, // * UNIX timestamp of last checkpoint block
-            1998064,    // * total number of transactions between genesis and last checkpoint
+            (  0, uint256S("0x000004dc4b125be785a22337c860d3db19f37db826b0d088346b999906714d49")),
+			(  2, uint256S("0x0000020e0e6c8ed0375124c377168ff5078b0aaeea735d7bb957edfd777c8e54")),
+            1498507696, // * UNIX timestamp of last checkpoint block
+            2,    // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             2800        // * estimated number of transactions per day after checkpoint
         };
