@@ -923,8 +923,8 @@ QString loadStyleSheet()
         cssName = QString(":/css/") + theme; 
     }
     else {
-        cssName = QString(":/css/light");  
-        settings.setValue("theme", "light");
+        cssName = QString(":/css/crownium");  
+        settings.setValue("theme", "crownium");
     }
     
     QFile qFile(cssName);      
